@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-df = pd.read_csv(r"C:\Users\rbrad\Documents\Data Science\streamlit_dashboard_package\media_data_processed.csv")
+df = pd.read_csv("media_data_processed.csv")
 df['Date'] = pd.to_datetime(df['Date'])
 
 st.title("📊 Marketing Performance Dashboard")
